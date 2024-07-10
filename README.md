@@ -7,7 +7,7 @@ Implementation of AKKF
 
 2- navigate to your conda environment where you have install stonesoup and replace the following inside stonesoup:
 
-2.1 - inside the main stone soup place Generator.py and kernel.py
+2.1 - inside the main directory of stonesoup place Generator.py and kernel.py
 
 2.2 - inside predictor replace kalman.py (from predictor file)
 
