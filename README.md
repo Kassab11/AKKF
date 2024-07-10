@@ -5,7 +5,7 @@ Implementation of AKKF
 
 1- Run python -m pip install stonesoup
 
-2- navigate to your conda environment where you have install stonesoup and replace the following inside stonesoup:
+2- navigate to your conda environment where you have installed stonesoup and replace the following inside stonesoup:
 
 2.1 - inside the main directory of stonesoup place Generator.py and kernel.py
 
