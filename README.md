@@ -91,12 +91,4 @@ Use [GitHub Issues](https://github.com/Kassab11/AKKF/issues) for reproducible pr
 
 ## Acknowledgments
 
-This research builds on the [Stone Soup tracking framework](https://github.com/dstl/Stone-Soup). In particular, `predictor/kalman.py` and `updater/kalman.py` contain Stone Soup code adapted for the research implementation. We acknowledge the Stone Soup developers and contributors for the underlying tracking library. Upstream copyright and license notices are preserved in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and [LICENSES/Stone-Soup-MIT.txt](LICENSES/Stone-Soup-MIT.txt).
-
-The AKKF method and earlier Stone Soup implementations are prior work cited in the associated paper. See [Research context](docs/research.md). The research findings and modifications in this repository are the authors' own work and do not represent the views of the Stone Soup project.
-
-## License
-
-This repository's original software and documentation contributions are released under the [MIT License](LICENSE). Stone Soup-derived portions retain their upstream copyright and MIT license terms, reproduced in [LICENSES/Stone-Soup-MIT.txt](LICENSES/Stone-Soup-MIT.txt). Preserve both notices when redistributing the combined code.
-
-The repository license does not grant rights to the separately distributed paper or full report. Academic citation is requested as scholarly acknowledgment, not as an additional license condition.
+This research builds on the [Stone Soup tracking framework](https://github.com/dstl/Stone-Soup).
