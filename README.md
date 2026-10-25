@@ -6,23 +6,13 @@ A Python research implementation of the **Adaptive Kernel Kalman Filter (AKKF)**
 
 **Independent research:** this repository is maintained by Mohamad Kassab as independent research. He has no affiliation with the Stone Soup project. This work is not an official Stone Soup project and is not sponsored or endorsed by Stone Soup or its developers.
 
-[Installation](docs/installation.md) · [Example notebook](sample.ipynb) · [Implementation notes](docs/implementation.md) · [Paper and citation](docs/research.md) · [License](LICENSE) · [Contributing](CONTRIBUTING.md)
+[Installation](docs/installation.md) · [Example notebook](sample.ipynb) · [Implementation notes](docs/implementation.md) · [Paper](#associated-paper) · [License](LICENSE) · [Contributing](CONTRIBUTING.md)
 
 ## Overview
 
 AKKF represents a state distribution using particles and kernel features. This implementation propagates particles through a motion model, updates kernel weights and covariance using measurements, and generates a new particle set from the estimated state moments.
 
 The code accompanies work on comparing AKKF and Extended Kalman Filter (EKF) approaches to drone tracking.
-
-## Associated paper
-
-**Tracking Drones with Adaptive Kalman Filter: Adaptive versus Non-Adaptive Kernel Approach**
-
-Raed Abu Zitar and Mohamad Kassab
-
-Accepted for presentation at the **2026 International Conference on Control, Energy, and Smart Systems (CESS 2026)**, October 28–30, 2026, Hammamet, Tunisia.
-
-Please cite the paper when using this work in research. See [research context and citation](docs/research.md#citing-the-work) for the reference, BibTeX entry, and the study's scope. The confirmed status is acceptance for presentation; a final proceedings citation and DOI are not yet recorded here.
 
 ## What is included
 
@@ -92,3 +82,7 @@ Use [GitHub Issues](https://github.com/Kassab11/AKKF/issues) for reproducible pr
 ## Acknowledgments
 
 This research builds on the [Stone Soup tracking framework](https://github.com/dstl/Stone-Soup).
+
+## Associated paper
+
+**Tracking Drones with Adaptive Kalman Filter: Adaptive versus Non-Adaptive Kernel Approach**
