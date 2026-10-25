@@ -24,11 +24,33 @@ The manuscript explicitly links to this repository as an implementation used in 
 
 The full report provides additional theoretical development and experimental context. Its broader experiment descriptions should not be read as features already implemented by the example notebook.
 
+## Stone Soup attribution and independence
+
+This research uses the [Stone Soup tracking library](https://github.com/dstl/Stone-Soup). The supplied predictor and updater modules contain adapted Stone Soup code; the upstream copyright and MIT permission notice are preserved in [LICENSES/Stone-Soup-MIT.txt](../LICENSES/Stone-Soup-MIT.txt). See [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md) for attribution and license scope.
+
+Mohamad Kassab carried out this work independently of the Stone Soup project and has no affiliation with it. This repository and the associated study are not official Stone Soup work and are not sponsored or endorsed by Stone Soup or its developers. The findings and research modifications are the authors' responsibility.
+
+The paper credits earlier AKKF research by Mengwei Sun and colleagues, as well as the Stone Soup implementation work by James S. Wright and colleagues. This repository applies and studies those research ideas; it does not claim to originate the AKKF method.
+
 ## Citing the work
 
 Until the final publication record is available, an acceptance-aware reference is:
 
 > Raed Abu Zitar and Mohamad Kassab. “Tracking Drones with Adaptive Kalman Filter: Adaptive versus Non-Adaptive Kernel Approach.” Manuscript accepted for presentation at CESS 2026, Hammamet, Tunisia, October 28–30, 2026.
+
+```bibtex
+@unpublished{abuzitar_kassab_2026_drone_tracking,
+  author = {Abu Zitar, Raed and Kassab, Mohamad},
+  title  = {Tracking Drones with Adaptive Kalman Filter:
+            Adaptive versus Non-Adaptive Kernel Approach},
+  year   = {2026},
+  note   = {Accepted for presentation at the 2026 International Conference
+            on Control, Energy, and Smart Systems (CESS 2026),
+            Hammamet, Tunisia, October 28--30, 2026}
+}
+```
+
+Update this reference when a verified proceedings record becomes available. No DOI, publisher, page range, or proceedings publication status is asserted by this entry.
 
 For software use, also include the repository URL and the exact commit used:
 

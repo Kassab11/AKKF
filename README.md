@@ -2,17 +2,29 @@
 
 ### Adaptive Kernel Kalman Filter for tracking research
 
-A Python research implementation of the **Adaptive Kernel Kalman Filter (AKKF)**, integrated with [Stone Soup](https://stonesoup.readthedocs.io/en/stable/). The repository provides custom prediction and update components, quadratic kernel utilities, and a notebook demonstrating two-dimensional tracking with simulated measurements.
+A Python research implementation of the **Adaptive Kernel Kalman Filter (AKKF)** built on the [Stone Soup tracking library](https://stonesoup.readthedocs.io/en/stable/). The repository provides custom prediction and update components, quadratic kernel utilities, and a notebook demonstrating two-dimensional tracking with simulated measurements.
 
-[Installation](docs/installation.md) · [Example notebook](sample.ipynb) · [Implementation notes](docs/implementation.md) · [Research context](docs/research.md) · [Contributing](CONTRIBUTING.md)
+**Independent research:** this repository is maintained by Mohamad Kassab as independent research. He has no affiliation with the Stone Soup project. This work is not an official Stone Soup project and is not sponsored or endorsed by Stone Soup or its developers.
+
+[Installation](docs/installation.md) · [Example notebook](sample.ipynb) · [Implementation notes](docs/implementation.md) · [Paper and citation](docs/research.md) · [License](LICENSE) · [Contributing](CONTRIBUTING.md)
 
 ## Overview
 
 AKKF represents a state distribution using particles and kernel features. This implementation propagates particles through a motion model, updates kernel weights and covariance using measurements, and generates a new particle set from the estimated state moments.
 
-The code accompanies work on comparing AKKF and Extended Kalman Filter (EKF) approaches to drone tracking. The related manuscript, **“Tracking Drones with Adaptive Kalman Filter: Adaptive versus Non-Adaptive Kernel Approach,”** by Raed Abu Zitar and Mohamad Kassab, has been accepted for presentation at **CESS 2026**. See the [research context and citation](docs/research.md) for the scope of the study.
+The code accompanies work on comparing AKKF and Extended Kalman Filter (EKF) approaches to drone tracking.
 
-### What is included
+## Associated paper
+
+**Tracking Drones with Adaptive Kalman Filter: Adaptive versus Non-Adaptive Kernel Approach**
+
+Raed Abu Zitar and Mohamad Kassab
+
+Accepted for presentation at the **2026 International Conference on Control, Energy, and Smart Systems (CESS 2026)**, October 28–30, 2026, Hammamet, Tunisia.
+
+Please cite the paper when using this work in research. See [research context and citation](docs/research.md#citing-the-work) for the reference, BibTeX entry, and the study's scope. The confirmed status is acceptance for presentation; a final proceedings citation and DOI are not yet recorded here.
+
+## What is included
 
 - **Custom predictor and updater** integrated into Stone Soup's Kalman modules.
 - **Quadratic kernel utilities** for the implementation's feature-space calculations.
@@ -79,6 +91,12 @@ Use [GitHub Issues](https://github.com/Kassab11/AKKF/issues) for reproducible pr
 
 ## Acknowledgments
 
-This implementation builds on the [Stone Soup tracking framework](https://github.com/dstl/Stone-Soup). The accompanying manuscript discusses the AKKF literature and related Stone Soup implementations; see [Research context](docs/research.md).
+This research builds on the [Stone Soup tracking framework](https://github.com/dstl/Stone-Soup). In particular, `predictor/kalman.py` and `updater/kalman.py` contain Stone Soup code adapted for the research implementation. We acknowledge the Stone Soup developers and contributors for the underlying tracking library. Upstream copyright and license notices are preserved in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and [LICENSES/Stone-Soup-MIT.txt](LICENSES/Stone-Soup-MIT.txt).
 
-The repository does not currently include a project license file.
+The AKKF method and earlier Stone Soup implementations are prior work cited in the associated paper. See [Research context](docs/research.md). The research findings and modifications in this repository are the authors' own work and do not represent the views of the Stone Soup project.
+
+## License
+
+This repository's original software and documentation contributions are released under the [MIT License](LICENSE). Stone Soup-derived portions retain their upstream copyright and MIT license terms, reproduced in [LICENSES/Stone-Soup-MIT.txt](LICENSES/Stone-Soup-MIT.txt). Preserve both notices when redistributing the combined code.
+
+The repository license does not grant rights to the separately distributed paper or full report. Academic citation is requested as scholarly acknowledgment, not as an additional license condition.
